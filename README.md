@@ -22,7 +22,7 @@ This site will help you learn more about me as a developer
 
 ## Screenshots
 
-![Screenshots](./planning/screenshot.jpg)
+![Screenshots](screenshot.jpg)
 
 ---
 
