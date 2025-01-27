@@ -1,55 +1,89 @@
-# Project Name
+# HYF Website
 
 <!-- describe your project -->
+
+This project is about me.
 
 ---
 
 ## Setup
 
-<!-- what code do you need just to open the project? this might include:
-  - boilerplate code (https://brandlitic.com/what-is-boilerplate-code/)
-  - loading program data
-  - rendering the initial user interface
--->
+- Create a new rep
+- Add collaborators and protect the main branch
+- Create a project board and issues
+- Clone the repo to a local machine
+- Create branches for each issue
 
 ---
 
-<!-- copy this section once for each must-have user story -->
+## Landing page
 
-## user story
+### Nav bar
 
-<!-- each issue created from this section will have the `for: user story` label -->
+This feature develops on a branch `nav-bar`.
 
-> "as a ... i can ... so that ..."
+#### HTML
 
-<!-- write any extra notes or description -->
+- Add `div` class="nav-bar"
+- Add `nav` inside `div`
 
-<!-- describe the tasks to build this user story
-  these will have the `type: logic` label, for example
-  not all projects will have all types of tasks
-  and these are not the only possible types, just some suggestions
--->
+#### CSS
 
-### Logic: user story
+- Add style to nav-bar
 
-- a _logic_ task -> this will become one issue
-  - [ ] some checkboxes for this task
-  - [ ] these will be copy-pasted into the issue
+### About me section
 
-### Interface: user story
+This feature develops on a branch `about-me-section`.
 
-- an _interface_ task -> this will become one issue
-  - [ ] some checkboxes for this task
-  - [ ] these will be copy-pasted into the issue
+#### HTML
 
-### Interaction: user story
+- Add `div` to create a main container
+- Add `h1` to add heading
+- Add `p` to add text
+- Add `img`
 
-- an _interaction_ task -> this will become one issue
-  - [ ] some checkboxes for this task
-  - [ ] these will be copy-pasted into the issue
+#### CSS
 
-### Documentation: user story
+- Add style to hero container
+- Add style to body
 
-- a _documentation_ task -> this will become one issue
-  - [ ] some checkboxes for this task
-  - [ ] these will be copy-pasted into the issue
+### My skills section
+
+This feature develops on a branch `my-skills-section`.
+
+#### HTML
+
+- Add `div` class="skills-container"
+- Add `ul` inside the "div"
+
+#### CSS
+
+- Add style to skills-container
+
+### My project section
+
+This feature develops on a branch `my-project-section`.
+
+#### HTML
+
+- Add `div` to create a container for project section
+- Add `ul` inside the "div"
+
+#### CSS
+
+- Add style to project section
+
+### Footer
+
+This feature develops on a branch `footer`.
+
+#### HTML
+
+- Add `div` for the footer section
+- Add `ul` inside "div"
+- Add `form` inside "div"
+
+#### CSS
+
+- Add style to footer container
+- Add style to form
