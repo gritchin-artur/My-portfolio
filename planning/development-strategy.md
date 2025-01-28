@@ -73,6 +73,19 @@ This feature develops on a branch `my-project-section`.
 
 - Add style to project section
 
+### My contact section
+
+This feature develops on a branch `my-contact`.
+
+#### HTML
+
+- Add `div` to create a container for project section
+- Add `ul` inside the "div"
+
+#### CSS
+
+- Add style to project section
+
 ### Footer
 
 This feature develops on a branch `footer`.

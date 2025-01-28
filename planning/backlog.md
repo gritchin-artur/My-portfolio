@@ -12,6 +12,8 @@ A collection of users who are looking for training frontend developer
 - As a user, I need useful `about-me-section` so user can see info about me.
 - As a user, I need useful `my-skills-section` so user can see my skills.
 - As a user, I need useful `my-project-section` so user can see my projects.
+  - As a user, I need useful `my-contact` so user can see my contact
+    information.
 - As a user, I need a `footer` so I can find the contact information easily.
 
 ### Should-Haves
