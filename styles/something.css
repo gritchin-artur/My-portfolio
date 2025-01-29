@@ -12,7 +12,7 @@ a {
 
 body {
   background-color: #80808024;
-  padding: 0 5px;
+  padding: 0;
   overflow-x: hidden;
 }
 
@@ -21,7 +21,7 @@ body {
 header {
   display: flex;
   position: fixed;
-  width: calc(100% - 40px);
+  width: calc(100vw - 15px);
   padding: 10px 20px;
   justify-content: space-between;
   background-color: #808080a6;
@@ -231,7 +231,95 @@ header {
   color: #555;
 }
 
-/* Keyframes for animation */
+/* contact-me-section */
+
+#contact-me {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.contact-description {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-btn {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.contact-btn:hover {
+  background-color: #555;
+}
+
+.contact-links {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.contact-links a {
+  display: grid;
+  align-items: center;
+}
+
+.contact-links img {
+  width: 40px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.contact-links img:hover {
+  transform: scale(1.1);
+}
+
+.resume-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #0073e6;
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.resume-btn:hover {
+  background-color: #005bb5;
+}
+
+/* keyframes for animation */
 
 @keyframes fade-in {
   0% {
