@@ -23,7 +23,7 @@ header {
   position: fixed;
   width: calc(100vw - 15px);
   padding: 10px 20px;
-  justify-content: space-between;
+  align-items: center;
   background-color: #808080a6;
   border-radius: 10px;
   z-index: 10;
@@ -32,28 +32,33 @@ header {
 .my-logo {
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: #fff;
   width: 50px;
   height: 50px;
   border-radius: 50%;
   border: 2px solid grey;
   text-align: center;
-  align-items: center;
   font-size: medium;
+  flex-shrink: 0;
 }
 
 .nav-list {
   display: flex;
   list-style: none;
-  width: 40%;
-  justify-content: space-around;
+  gap: 2vw;
+  flex-wrap: wrap;
+  justify-content: end;
+  flex-grow: 1;
+  min-width: 0;
 }
 
 .nav-item {
   color: #fff;
   font-family: "Playfair Display", serif;
-  font-size: larger;
+  font-size: large;
   transition: color 0.3s ease;
+  white-space: nowrap;
 }
 
 .nav-item:hover {
@@ -97,6 +102,10 @@ header {
   word-spacing: 1px;
   line-height: 1.5;
   font-size: larger;
+}
+
+.burger-menu {
+  display: none;
 }
 
 /* my-skills Section */
@@ -208,7 +217,7 @@ header {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0 0 0 / 10%);
-  width: 100%;
+  max-width: 100%;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -362,5 +371,83 @@ footer {
   100% {
     opacity: 1;
     transform: scale(1);
+  }
+}
+
+/* tablet-media */
+
+@media (width <= 768px) {
+  header {
+    justify-content: space-between;
+  }
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #ffffffcb;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .nav-list.active {
+    display: flex;
+    height: 100vh;
+    top: 54px;
+    right: 0;
+    width: 40vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-item {
+    padding: 10px;
+    color: #555;
+    font-size: 5vw;
+  }
+
+  .burger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    z-index: 20;
+  }
+
+  .burger-line {
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .burger-menu.active .burger-line:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+
+  .burger-menu.active .burger-line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burger-menu.active .burger-line:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+
+  /* project-section */
+
+  .projects-grid {
+    grid-template-columns: none;
+  }
+
+  /* contact-section */
+
+  .contact-links {
+    flex-wrap: wrap;
   }
 }
